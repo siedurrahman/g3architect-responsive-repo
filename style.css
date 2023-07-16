@@ -42,7 +42,7 @@ font-weight: 700;
 
 }
 /* banner section */
-.banner{}
+
 .banner-content{
     text-align: center;
     max-width: 800px;
@@ -68,14 +68,68 @@ line-height: 26px;
 }
 
 
-/* header responsive for mobile*/
+
+    /* main features section */
+       main{
+        max-width: 1440px;
+        margin: 0 auto;
+
+       }
+      .team-container{
+         display: flex;
+       align-items: center;
+        padding: 50px 200px;
+        margin: 70px 50px;
+
+    }
+    .team-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+       
+    }
+    .team-content{
+        padding: 0 40px 0 120px;
+      
+
+    }
+    .team-content h2{
+        color: #727272;
+     font-size: 3rem;
+       font-weight: 500;  
+
+    }
+    .team-content p{
+        line-height: 20px;
+        font-size: 16px;
+
+    }
+    .of-our{
+        color:black ;
+        font-weight: 700;
+    }
+    .features{
+       color:#FF900E ;
+       font-weight: 700;
+    }
+
+   /* header responsive for mobile*/
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
     nav{
-        flex-direction: column;
+       flex-direction: column;
     }
+    .team-container{
+        flex-direction: column;
+      
+        padding: 50px 100px;
+        
+    }
+    .team-img{
+        grid-template-columns: 1fr ;
+        }
 }
 /* header responsive for pad */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -85,44 +139,12 @@ line-height: 26px;
     nav{
         flex-direction: column;
     }
-}
-    /* main features section */
-       .all-main{
-        max-width: 1440px;
-
-       }
-       .all-main div{
-        width: 100%;
-       }
-
-
     .team-container{
-
-
-        display: flex;
-        
-        align-items: center;
-        padding: 50px 225px;
+        flex-direction: column;
+        padding: auto;
     }
     .team-img{
-        display: grid;
-        grid-template-columns: repeat(2,1f);
-        gap: 20px;
-       
-    }
-    .team-content{
-
-    }
-    .team-content h2{
-        color: #727272;
-     font-size: 45px;
-       font-weight: 500;
-
-    }
-    .of-our{
-        color:black ;
-    }
-    .features{
-       color:#FF900E ;
-    }
-
+   grid-template-columns: repeat(2,1fr);
+      }
+   
+}
