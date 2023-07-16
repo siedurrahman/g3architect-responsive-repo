@@ -108,10 +108,93 @@ line-height: 26px;
         color:black ;
         font-weight: 700;
     }
-    .features{
+    .feach{
        color:#FF900E ;
        font-weight: 700;
     }
+/* features section */
+.features{
+   display: flex;
+    margin-top: 100px;
+    gap: 100px;
+}
+.features-card{
+    
+    text-align: center;
+}
+    /* facts section */
+    .facts-card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2.8rem;
+    }
+    .facts h3{
+        color:#131313;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    .facts p{
+        color:  #727272;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: -10px;
+
+    }
+    .card{
+        border-radius: 8px;
+       border: 1px solid #FF900E;
+       text-align: center;
+       padding: 30px 40px;
+      
+    }
+    .card, .card-stats{
+        color: #424242;
+       font-size: 2.8rem;
+font-weight: 600;
+margin: 10px 0;
+ 
+}
+.card, .card-title{
+    color:#727272;
+    font-weight: 600;
+font-size: 1.25rem;
+}
+
+/* sponsor section */
+.sponsor-container{
+    text-align: center;
+    margin-top: 40px;
+}
+.sponsor-img{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+    align-items: center;
+    gap: 20px;
+}
+.sponsor-container h2{
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sponsor-container p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sponsor-img img{
+    width: 165px;
+    text-align: center;
+}
+
+
+footer{
+    background-color:#FFF4E7;
+    text-align: center;
+    padding: 20px;
+}
 
    /* header responsive for mobile*/
 @media screen and (max-width:576px) {
@@ -127,8 +210,14 @@ line-height: 26px;
         padding: 50px 100px;
         
     }
+   
+    
     .team-img{
         grid-template-columns: 1fr ;
+        }
+        .facts-card, .sponsor-img{
+            flex-direction: column;
+
         }
 }
 /* header responsive for pad */
@@ -146,5 +235,9 @@ line-height: 26px;
     .team-img{
    grid-template-columns: repeat(2,1fr);
       }
+      .facts-card, .sponsor-img{
+        flex-direction: column;
+        
+    }
    
 }
